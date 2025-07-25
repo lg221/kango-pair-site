@@ -75,23 +75,23 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "KANGO~" + string_session;
+                        let md = "COBRA~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
                         let desc = `*Hello there KANGO-XMD User! 👋🏻* 
 
 > Do not share your session id with your gf 😂.
 
- *Thanks for using KANGO-XMD 🚩* 
+ *Thanks for using COBRA-XMD 🚩* 
 
 > Join WhatsApp Channel :- ⤵️
  
-https://whatsapp.com/channel/0029Va8YUl50bIdtVMYnYd0E
+https://whatsapp.com/channel/0029Va8YU50bIdtVMYnYd0E
 
 Dont forget to fork the repo ⬇️
 
-https://github.com/OfficialKango/KANGO-XMD
+https://github.com/cobra/cobra-xmd
 
-> *© Powered BY Hector Manuel 🖤*`; 
+> *© Powered by vishwa & nima🖤*`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
